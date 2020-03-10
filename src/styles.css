@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@import url("css/page-style.css");
+@import url("css/layout-style.css");
+@import url("css/typography-style.css");
+@import url("css/header-style.css");
+@import url("css/card-style.css");
+@import url("css/reset-style.css");
+@import url("css/menu-style.css");

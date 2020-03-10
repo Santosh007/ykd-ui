@@ -1,0 +1,39 @@
+/* Base styles that apply to all menus */
+.menu-section {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid hsl(0, 0%);
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: hsl(0, 0%, 15%);
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.6em 1em;
+}
+
+.menu li a:hover {
+  background: hsl(0, 0%, 25%);
+}
+
+/* Styles for Single Level Menu */
+
+@media screen and (min-width: 30em) {
+  .single-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .single-nav li {
+    flex: 1 0 auto;
+    text-align: center;
+  }
+}
