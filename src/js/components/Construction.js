@@ -3,6 +3,6 @@ import Cards from "./Cards";
 
 export default class Construction extends React.Component {
   render() {
-    return <Cards />;
+    return <Cards projects={this.props.construction} />;
   }
 }
