@@ -15,10 +15,9 @@ export default class Menu extends React.Component {
   }
 
   handleChange(selected) {
-    this.setState({ selected });
+    this.setState({ selected }, () => this.fetchData(this.state.selected));
     //console.log(selection);
     //console.log(this.state.selected);
-    this.fetchData(this.state.selected);
   }
 
   render() {

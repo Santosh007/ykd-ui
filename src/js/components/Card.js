@@ -4,10 +4,10 @@ export default class Card extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      image: this.props.plan.url,
-      alt: this.props.plan.alt,
-      name: this.props.plan.name,
-      desc: this.props.plan.desc
+      image: this.props.project.image,
+      alt: this.props.project.alt,
+      name: this.props.project.name,
+      desc: this.props.project.desc
     };
   }
 

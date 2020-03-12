@@ -10,6 +10,6 @@ export default class Architecture extends React.Component {
   }
 
   render() {
-    return <Cards plans={this.state.projects} />;
+    return <Cards projects={this.state.projects} />;
   }
 }
