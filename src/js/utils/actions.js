@@ -30,7 +30,6 @@ export const fetchProjectsData = project => dispatch => {
         });
       break;
     case "Interior":
-      console.log("In actions " + project);
       axios
         .get(baseURL + "/apis/archi")
         .then(response => {

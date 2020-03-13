@@ -7,7 +7,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  null
-)(Architecture);
+export default connect(mapStateToProps)(Architecture);

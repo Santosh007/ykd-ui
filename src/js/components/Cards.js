@@ -12,7 +12,7 @@ export default class Cards extends React.Component {
   render() {
     return (
       <section className="cards">
-        {this.state.projects.map(project => (
+        {this.props.projects.map(project => (
           <Card key={project.key} project={project} />
         ))}
       </section>

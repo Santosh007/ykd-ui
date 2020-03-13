@@ -5,7 +5,4 @@ const mapStateToProps = state => {
   return { construction: state.projects.construction };
 };
 
-export default connect(
-  mapStateToProps,
-  null
-)(Construction);
+export default connect(mapStateToProps)(Construction);
