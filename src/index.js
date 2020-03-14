@@ -6,6 +6,7 @@ import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunkMiddleware from "redux-thunk";
 import Header from "./js/components/Header";
+import Menu from "./js/connectors/Menu";
 import Main from "./js/components/Main";
 import Footer from "./js/components/Footer";
 import appReducer from "./js/store/reducers";
@@ -19,6 +20,7 @@ const App = function() {
       <div className="outer-wrap">
         <Router>
           <Header />
+          <Menu />
           <div className="content">
             <Main />
           </div>

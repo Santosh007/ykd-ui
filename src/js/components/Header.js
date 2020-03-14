@@ -10,7 +10,6 @@ export default class Header extends React.Component {
             <h1 className="site-title">YK Designs</h1>
           </div>
         </div>
-        <Menu />
       </header>
     );
   }

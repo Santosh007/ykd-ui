@@ -26,6 +26,12 @@
 /* Styles for Single Level Menu */
 
 @media screen and (min-width: 30em) {
+  #single-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
   .single-nav ul {
     display: flex;
     flex-wrap: wrap;
