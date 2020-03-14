@@ -10,6 +10,8 @@ body {
 
 .site-title {
   color: white;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .card {
