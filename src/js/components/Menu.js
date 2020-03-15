@@ -6,7 +6,7 @@ export default class Menu extends React.Component {
     super(props);
     this.fetchData = props.fetchData;
     this.state = {
-      selected: "Architecture"
+      selected: window.location.pathname.slice(1)
     };
   }
 
@@ -28,7 +28,7 @@ export default class Menu extends React.Component {
             <Link
               className="link"
               to="/"
-              onClick={() => this.handleChange("Architecture")}
+              onClick={() => this.handleChange("architecture")}
             >
               Architecture
             </Link>
@@ -37,7 +37,7 @@ export default class Menu extends React.Component {
             <Link
               className="link"
               to="/interior"
-              onClick={() => this.handleChange("Interior")}
+              onClick={() => this.handleChange("interior")}
             >
               Interior
             </Link>
@@ -46,7 +46,7 @@ export default class Menu extends React.Component {
             <Link
               className="link"
               to="/construction"
-              onClick={() => this.handleChange("Construction")}
+              onClick={() => this.handleChange("construction")}
             >
               Construction
             </Link>

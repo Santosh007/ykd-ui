@@ -1,5 +1,4 @@
 import React from "react";
-import Menu from "../connectors/Menu";
 
 export default class Header extends React.Component {
   render() {

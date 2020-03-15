@@ -1,7 +1,31 @@
 {
   "projects": {
-    "architecture": [],
-    "interior": [],
-    "construction": []
+    "architecture": [
+      {
+        "key": 1,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif",
+        "alt": "Loading",
+        "name": "Loading Image....",
+        "desc": "Loading Description..."
+      }
+    ],
+    "interior": [
+      {
+        "key": 1,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif",
+        "alt": "Loading",
+        "name": "Loading Image....",
+        "desc": "Loading Description..."
+      }
+    ],
+    "construction": [
+      {
+        "key": 1,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif",
+        "alt": "Loading",
+        "name": "Loading Image....",
+        "desc": "Loading Description..."
+      }
+    ]
   }
 }

@@ -19,17 +19,7 @@ export const constructionProjects = projects => ({
 export const fetchProjectsData = project => dispatch => {
   let baseURL = "https://ykd-serv.herokuapp.com";
   switch (project) {
-    case "Architecture":
-      axios
-        .get(baseURL + "/apis/archi")
-        .then(response => {
-          dispatch(architectureProjects(response.data));
-        })
-        .catch(err => {
-          console.log(err);
-        });
-      break;
-    case "Interior":
+    case "interior":
       axios
         .get(baseURL + "/apis/archi")
         .then(response => {
@@ -39,7 +29,7 @@ export const fetchProjectsData = project => dispatch => {
           console.log(err);
         });
       break;
-    case "Construction":
+    case "construction":
       axios
         .get(baseURL + "/apis/archi")
         .then(response => {
@@ -50,6 +40,14 @@ export const fetchProjectsData = project => dispatch => {
         });
       break;
     default:
+      axios
+        .get(baseURL + "/apis/archi")
+        .then(response => {
+          dispatch(architectureProjects(response.data));
+        })
+        .catch(err => {
+          console.log(err);
+        });
       break;
   }
 };
