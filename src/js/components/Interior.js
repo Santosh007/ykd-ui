@@ -8,14 +8,18 @@ export default class Interior extends React.Component {
   }
 
   render() {
-    return this.props.interior.map(project => (
-      <Link
-        key={project.key}
-        to={`/project/${project.name}`}
-        onClick={() => this.handleChange(project.name)}
-      >
-        <Card project={project} />
-      </Link>
-    ));
+    return (
+      <section className="cards">
+        {this.props.interior.map(project => (
+          <Link
+            key={project.key}
+            to={`/project/${project.name}`}
+            onClick={() => this.handleChange(project.name)}
+          >
+            <Card project={project} />
+          </Link>
+        ))}
+      </section>
+    );
   }
 }

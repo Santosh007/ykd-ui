@@ -8,14 +8,18 @@ export default class Architecture extends React.Component {
   }
 
   render() {
-    return this.props.architecture.map(project => (
-      <Link
-        key={project.key}
-        to={`/project/${project.name}`}
-        onClick={() => this.handleChange(project.name)}
-      >
-        <Card project={project} />
-      </Link>
-    ));
+    return (
+      <section className="cards">
+        {this.props.architecture.map(project => (
+          <Link
+            key={project.key}
+            to={`/project/${project.name}`}
+            onClick={() => this.handleChange(project.name)}
+          >
+            <Card project={project} />
+          </Link>
+        ))}
+      </section>
+    );
   }
 }
