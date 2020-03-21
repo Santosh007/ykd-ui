@@ -12,6 +12,7 @@ export default class Architecture extends React.Component {
       <section className="cards">
         {this.props.architecture.map(project => (
           <Link
+            className="link"
             key={project.key}
             to={`/project/${project.name}`}
             onClick={() => this.handleChange(project.name)}
