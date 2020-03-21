@@ -26,6 +26,15 @@
         "name": "Loading Image....",
         "desc": "Loading Description..."
       }
+    ],
+    "project": [
+      {
+        "key": 1,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif",
+        "alt": "Loading",
+        "name": "Loading Image....",
+        "desc": "Loading Description..."
+      }
     ]
   }
 }

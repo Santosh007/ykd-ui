@@ -10,10 +10,14 @@ export const interior = (state = [], action) =>
 export const construction = (state = [], action) =>
   action.type === C.CONSTRUCTION_PROJECTS ? action.payload : state;
 
+export const project = (state = [], action) =>
+  action.type === C.SELECTED_PROJECT ? action.payload : state;
+
 export default combineReducers({
   projects: combineReducers({
     architecture,
     interior,
-    construction
+    construction,
+    project
   })
 });

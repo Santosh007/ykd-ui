@@ -1,6 +1,7 @@
 import Construction from "../components/Construction";
 import { connect } from "react-redux";
 import initialState from "../../initialState";
+import { fetchProjectDetails } from "../utils/actions";
 
 const mapStateToProps = state => {
   return {
@@ -10,4 +11,15 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Construction);
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchData(project) {
+      dispatch(fetchProjectDetails(project));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Construction);

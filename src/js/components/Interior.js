@@ -1,8 +1,21 @@
 import React from "react";
-import Cards from "./Cards";
+import { Link } from "react-router-dom";
+import Card from "./Card";
 
 export default class Interior extends React.Component {
+  handleChange(projectName) {
+    this.props.fetchData(projectName);
+  }
+
   render() {
-    return <Cards projects={this.props.interior} />;
+    return this.props.interior.map(project => (
+      <Link
+        key={project.key}
+        to={`/project/${project.name}`}
+        onClick={() => this.handleChange(project.name)}
+      >
+        <Card project={project} />
+      </Link>
+    ));
   }
 }

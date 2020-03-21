@@ -1,5 +1,6 @@
 import Interior from "../components/Interior";
 import { connect } from "react-redux";
+import { fetchProjectDetails } from "../utils/actions";
 import initialState from "../../initialState";
 
 const mapStateToProps = state => {
@@ -10,4 +11,15 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Interior);
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchData(project) {
+      dispatch(fetchProjectDetails(project));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Interior);

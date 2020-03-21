@@ -6,7 +6,10 @@ export default class Menu extends React.Component {
     super(props);
     this.fetchData = props.fetchData;
     this.state = {
-      selected: window.location.pathname.slice(1)
+      selected:
+        window.location.pathname.slice(1) === ""
+          ? "architecture"
+          : window.location.pathname.slice(1)
     };
   }
 
