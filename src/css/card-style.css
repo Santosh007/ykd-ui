@@ -63,7 +63,7 @@ body {
     margin-bottom: 1em;
   }
 
-  .link .card {
+  .link {
     display: flex;
     flex: 0 1 calc(50% - 0.5em);
     margin-bottom: 1em;
@@ -80,7 +80,7 @@ body {
     margin-bottom: 2em;
   }
 
-  .link .card {
+  .link {
     flex: 0 1 calc(33% - 1em);
     margin-bottom: 2em;
   }

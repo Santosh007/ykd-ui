@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Card from "./Card";
+import FCard from "./FCard";
 
 export default class Construction extends React.Component {
   handleChange(projectName) {
@@ -11,13 +10,11 @@ export default class Construction extends React.Component {
     return (
       <section className="cards">
         {this.props.construction.map(project => (
-          <Link
+          <FCard
             key={project.key}
-            to={`/project/${project.name}`}
+            project={project}
             onClick={() => this.handleChange(project.name)}
-          >
-            <Card project={project} />
-          </Link>
+          />
         ))}
       </section>
     );
