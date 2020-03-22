@@ -12,10 +12,17 @@ export default class FCard extends React.Component {
     };
   }
 
+  handleClick() {
+    this.props.onClick();
+  }
+
   render() {
     return (
       <article className="card">
-        <Link to={`/project/${this.state.name}`}>
+        <Link
+          to={`/project/${this.state.name}`}
+          onClick={() => this.handleClick()}
+        >
           <figure className="thumbnail">
             <img src={this.state.image} alt={this.state.alt} />
           </figure>
