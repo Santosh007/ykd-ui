@@ -14,7 +14,7 @@ export default class Card extends React.Component {
   render() {
     return (
       <article className="card">
-        <a href="#">
+        <button>
           <figure className="thumbnail">
             <img src={this.state.image} alt={this.state.alt} />
           </figure>
@@ -22,7 +22,7 @@ export default class Card extends React.Component {
             <h2>{this.state.name}</h2>
             <p>{this.state.desc}</p>
           </div>
-        </a>
+        </button>
       </article>
     );
   }
